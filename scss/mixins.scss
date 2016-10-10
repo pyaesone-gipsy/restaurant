@@ -1,0 +1,19 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin divider($top, $width, $height) {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: $top;
+    width: $width;
+    height: $height;
+}
