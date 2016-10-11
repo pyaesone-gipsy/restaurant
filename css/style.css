@@ -53,6 +53,8 @@ header {
   header .logo {
     margin-top: 5px;
     float: left; }
+    header .logo img {
+      display: block; }
   header nav ul {
     float: right; }
   header nav li {
@@ -175,7 +177,7 @@ header {
   padding: 100px 10%;
   background: url("../img/section-bg.png");
   background-size: cover; }
-  .ingredients-section .ingredients-wrapper {
+  .ingredients-section .ingredients-container {
     width: 570px;
     height: 560px;
     box-sizing: border-box;
@@ -204,7 +206,7 @@ header {
       width: 252px;
       height: 24px; }
   .ingredients-section .img-wrapper {
-    margin: 65px 0; }
+    margin: 65px 0 0; }
   .ingredients-section .ingredient-img {
     width: 100px;
     height: 100px;
@@ -476,3 +478,78 @@ header {
       color: #55acee; }
     .main-footer .footer-social .fa-trello:hover {
       color: #0079bf; }
+
+@media all and (max-width: 1100px) {
+  header .head-wrapper {
+    text-align: center; }
+  header .logo {
+    display: inline-block;
+    float: none; }
+  header .head-wrapper {
+    padding: 0; }
+  header nav ul {
+    display: block;
+    float: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 10px; }
+  header nav li {
+    display: inline-block;
+    margin: 20px 8px;
+    float: none; }
+  header nav a {
+    font-size: 21px;
+    padding: 15px 10px;
+    border: 0; }
+    header nav a:hover {
+      border-top: 0;
+      color: #f0c755; }
+  header nav ol {
+    position: absolute;
+    right: 20px;
+    top: -20px; }
+  header h1 {
+    margin-top: 60px;
+    font-size: 70px; }
+  .about-section .dish {
+    display: none; }
+  .ingredients-section .ingredients-container {
+    float: none;
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+    height: auto; }
+  .menu-section .menu-column {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 100px; }
+    .menu-section .menu-column:last-child {
+      margin-bottom: 0; }
+  .menu-section .menu-card {
+    margin: 100px auto; }
+    .menu-section .menu-card:first-child {
+      margin-top: 0; }
+  .review-section .review-container {
+    max-width: 770px;
+    width: 80%;
+    height: auto;
+    padding: 50px 70px; }
+  .review-section p {
+    font-size: 21px; }
+  .reservation-section .reservation-images {
+    display: none; }
+  .main-footer .about-elem {
+    margin: 20px; }
+    .main-footer .about-elem:first-child {
+      display: block;
+      margin: 0 auto 50px; } }
+
+@media all and (max-width: 720px) {
+  header nav li {
+    display: block;
+    margin: 0; }
+    header nav li:hover {
+      background-color: rgba(140, 99, 0, 0.5); }
+  header nav a {
+    padding: 10px; }
+  header nav ol {
+    display: none; } }
