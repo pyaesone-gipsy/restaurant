@@ -14,7 +14,7 @@ header {
 
   .head-wrapper {
     background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0));
-    padding: 0 10%;
+    padding: 0 8%;
   }
 
   .logo {
@@ -235,7 +235,7 @@ header {
   .menu-column {
     display: inline-block;
     vertical-align:top;
-    margin-right: 160px;
+    margin-right: 10%;
 
     &:last-child {
       margin-right: 0;
@@ -476,9 +476,10 @@ header {
     display: inline-block;
     vertical-align: top;
     margin-left: 40px;
-    width: 355px;
+    width: 300px;
 
     &:first-child {
+      width: 355px;
       margin-left: 0;
     }
   }
@@ -522,9 +523,10 @@ header {
 
   .footer-social {
     margin-top: 50px;
+    display: inline-block;
 
     li {
-      display: inline-block;
+      float: left;
     }
 
     .fa {
@@ -562,8 +564,9 @@ header {
 
     .fa-trello {
       &:hover {
-      color: #0079bf
+        color: #0079bf
       }
     }
+
   }
 }
