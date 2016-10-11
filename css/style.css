@@ -67,6 +67,19 @@ header {
     border-top: 2px solid transparent; }
     header nav a:hover {
       border-top: 2px solid #ffffff; }
+  header nav .nav-socials {
+    float: right; }
+  header nav .fa {
+    text-decoration: none;
+    font-size: 21px;
+    color: #c89f2d;
+    width: 20px;
+    overflow: hidden;
+    text-indent: 50px;
+    padding: 50px 8px; }
+    header nav .fa:before {
+      float: left;
+      text-indent: 0; }
   header nav:after {
     content: "";
     display: block;
@@ -77,13 +90,13 @@ header {
     color: #ffffff;
     font-family: "Yeseva One", cursive;
     margin-top: 120px; }
-  header .buttons {
+  header .button-container {
     margin: 0 auto;
     width: 490px;
     margin-top: 125px;
     height: 60px;
     position: relative; }
-    header .buttons:before {
+    header .button-container:before {
       background: url("../img/divider.png");
       content: "";
       display: block;
@@ -312,7 +325,16 @@ header {
     color: #ffffff;
     line-height: 45px;
     font-size: 25px;
-    font-family: "Gentium Book Basic", serif; }
+    font-family: "Gentium Book Basic", serif;
+    position: relative; }
+    .review-section p:before {
+      color: #aeaeae;
+      content: "\201C";
+      font-size: 96px;
+      font-family: georgia;
+      position: absolute;
+      left: -45px;
+      top: 10px; }
   .review-section footer {
     color: #ffffff;
     margin-top: 45px; }
@@ -418,3 +440,37 @@ header {
       height: 24px; }
   .main-footer span {
     font-weight: bold; }
+  .main-footer .payments {
+    margin-top: 50px; }
+    .main-footer .payments li {
+      margin: 0 5px;
+      width: 40px;
+      overflow: hidden;
+      text-indent: 60px; }
+      .main-footer .payments li:before {
+        font-size: 30px;
+        text-indent: 0;
+        float: left; }
+  .main-footer .footer-social {
+    margin-top: 50px; }
+    .main-footer .footer-social li {
+      display: inline-block; }
+    .main-footer .footer-social .fa {
+      text-decoration: none;
+      margin: 0 5px;
+      width: 30px;
+      overflow: hidden;
+      text-indent: 60px;
+      color: #ffffff;
+      font-size: 26px; }
+      .main-footer .footer-social .fa:before {
+        text-indent: 0;
+        float: left; }
+    .main-footer .footer-social .fa-facebook:hover {
+      color: #3b5998; }
+    .main-footer .footer-social .fa-youtube:hover {
+      color: #e52d27; }
+    .main-footer .footer-social .fa-twitter:hover {
+      color: #55acee; }
+    .main-footer .footer-social .fa-trello:hover {
+      color: #0079bf; }

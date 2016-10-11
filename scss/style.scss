@@ -22,6 +22,7 @@ header {
     float: left;
   }
 
+  // Main navigation
   nav {
     ul {
       float: right;
@@ -44,6 +45,27 @@ header {
         border-top: 2px solid $white;
       }
     }
+
+    // Social icons
+    .nav-socials {
+      float: right;
+    }
+
+    .fa {
+      text-decoration: none;
+      font-size: 21px;
+      color: $gold;
+      width: 20px;
+      overflow: hidden;
+      text-indent: 50px;
+      padding: 50px 8px;
+
+      &:before {
+        float: left;
+        text-indent: 0;
+      }
+    }
+
     @include clearfix;
   }
 
@@ -55,7 +77,7 @@ header {
     margin-top: 120px;
   }
 
-  .buttons {
+  .button-container {
     margin: 0 auto;
     width: 230px * 2 + 30;
     margin-top: 125px;
@@ -140,8 +162,8 @@ header {
   .dish {
     float: left;
   }
-  @include clearfix;
 
+  @include clearfix;
 }
 
 // INGREDIENTS SECTION
@@ -228,7 +250,6 @@ header {
       margin-bottom: 0;
     }
   }
-
 
   h3 {
     font-size: 36px;
@@ -332,6 +353,17 @@ header {
     line-height: 45px;
     font-size: 25px;
     font-family: $book;
+    position: relative;
+
+    &:before {
+      color: #ccc - 30;
+      content: "\201C";
+      font-size: 96px;
+      font-family: georgia;
+      position: absolute;
+      left: -45px;
+      top: 10px;
+    }
   }
 
   footer {
@@ -432,12 +464,13 @@ header {
   }
 }
 
+// FOOTER
+
 .main-footer {
   background-color: #191919;
   color: $white;
   padding: 60px 0;
   text-align: center;
-
 
   .about-elem {
     display: inline-block;
@@ -468,5 +501,69 @@ header {
 
   span {
     font-weight: bold;
+  }
+
+  .payments {
+    margin-top: 50px;
+
+    li {
+      margin: 0 5px;
+      width: 40px;
+      overflow: hidden;
+      text-indent: 60px;
+
+      &:before {
+        font-size: 30px;
+        text-indent: 0;
+        float: left;
+      }
+    }
+  }
+
+  .footer-social {
+    margin-top: 50px;
+
+    li {
+      display: inline-block;
+    }
+
+    .fa {
+      text-decoration: none;
+      margin: 0 5px;
+      width: 30px;
+      overflow: hidden;
+      text-indent: 60px;
+      color: $white;
+      font-size: 26px;
+
+      &:before {
+        text-indent: 0;
+        float: left;
+      }
+    }
+
+    .fa-facebook {
+      &:hover {
+        color: #3b5998;
+      }
+    }
+
+    .fa-youtube {
+      &:hover {
+        color: #e52d27;
+      }
+    }
+
+    .fa-twitter {
+      &:hover {
+        color: #55acee;
+      }
+    }
+
+    .fa-trello {
+      &:hover {
+      color: #0079bf
+      }
+    }
   }
 }
