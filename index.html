@@ -10,19 +10,19 @@
     <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header id="main-header">
       <div class="head-wrapper">
         <a class="logo" href="#">
           <img src="img/logo.png" alt="">
         </a>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Igredients</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Reservations</a></li>
+            <li><a href="#main-header">Home</a></li>
+            <li><a href="#chef-section">About</a></li>
+            <li><a href="#ingredients-section">Igredients</a></li>
+            <li><a href="#menu-section">Menu</a></li>
+            <li><a href="#review-section">Reviews</a></li>
+            <li><a href="#reservation-section">Reservations</a></li>
             <ol class="nav-socials">
               <li><a class="fa fa-twitter" href="http://twitter.com">Twitter</a></li>
               <li><a class="fa fa-youtube" href="http://youtube.com">Youtube</a></li>
@@ -38,8 +38,8 @@
       </div>
     </header>
     <main>
-      <section class="about-section">
-        <div class="about-wrapper">
+      <section id="chef-section">
+        <div class="chef-wrapper">
           <div class="chef">
             <h2>Just the right food</h2>
             <p>If you’ve been to one of our restaurants,
@@ -47,12 +47,12 @@
               for more. Perfect materials and freshly baked food,
               delicious Lambda cakes,  muffins, and gourmet coffees make us
               hard to resist! Stop in today and check us out!</p>
-              <img src="img/chef.png" class="chef-img" alt="chef">
+            <img src="img/chef.png" class="chef-img" alt="chef">
             </div>
             <img src="img/dish.png" class="dish" alt="dish">
         </div>
       </section>
-      <section class="ingredients-section">
+      <section id="ingredients-section">
         <div class="ingredients-container">
           <h2>Fine ingredients</h2>
           <p>If you’ve been to one of our restaurants,
@@ -67,7 +67,7 @@
           </div>
         </div>
       </section>
-      <section class="menu-section">
+      <section id="menu-section">
         <div class="menu-column">
           <div class="menu-card">
             <h3>Appetisers</h3>
@@ -153,7 +153,7 @@
           </div>
         </div>
       </section>
-      <section class="review-section">
+      <section id="review-section">
         <div class="review-container">
           <h2>Guest Reviews</h2>
           <blockquote>
@@ -169,7 +169,7 @@
           </blockquote>
         </div>
       </section>
-      <section class="reservation-section">
+      <section id="reservation-section">
         <div class="reservation-images">
           <img src="img/meat.png" alt="meat">
           <img src="img/fruits.png" alt="fruits">
@@ -238,5 +238,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js">
+
+    </script>
   </body>
 </html>

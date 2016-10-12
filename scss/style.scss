@@ -125,13 +125,13 @@ header {
 } // end header
 
 // CHEF SECTION
-.about-section {
+#chef-section {
   background: url("../img/dish-pattern.png");
   padding: 70px 0 50px;
   margin: 0 auto;
   text-align: center;
 
-  .about-wrapper {
+  .chef-wrapper {
     display: inline-block;
   }
 
@@ -172,7 +172,7 @@ header {
 
 // INGREDIENTS SECTION
 
-.ingredients-section {
+#ingredients-section {
   padding: 100px 10%;
   background: url("../img/section-bg.png");
   background-size: cover;
@@ -231,7 +231,7 @@ header {
 
 // MENU SECTION
 
-.menu-section {
+#menu-section {
   padding: 100px 20px;
   text-align: center;
   background: url("../img/menu-pattern-s.png");
@@ -322,7 +322,7 @@ header {
 
 // REVIEWS SECTION
 
-.review-section {
+#review-section {
   background: url("../img/reviews-bg.png");
   background-size: cover;
   padding: 100px 0;
@@ -378,7 +378,7 @@ header {
 
 // RESERVATION SECTION
 
-.reservation-section {
+#reservation-section {
   padding: 100px 0;
   text-align: center;
   background: url("../img/dish-pattern.png");
@@ -599,11 +599,12 @@ header {
     }
 
     nav {
+      margin-top: 10px;
+
       ul {
         display: block;
         float: none;
         background-color: rgba(0,0,0,0.2);
-        margin-top: 10px;
       }
 
       li {
@@ -636,13 +637,13 @@ header {
     }
   }
 
-  .about-section {
+  #chef-section {
     .dish {
       display: none;
     }
   }
 
-  .ingredients-section {
+  #ingredients-section {
     .ingredients-container {
       float: none;
       margin: 0 auto;
@@ -652,7 +653,7 @@ header {
     }
   }
 
-  .menu-section {
+  #menu-section {
     .menu-column {
       display: block;
       margin-right: 0;
@@ -672,7 +673,7 @@ header {
     }
   }
 
-  .review-section {
+  #review-section {
     .review-container {
       max-width: 770px;
       width: 80%;
@@ -685,7 +686,7 @@ header {
     }
   }
 
-  .reservation-section {
+  #reservation-section {
     .reservation-images {
       display: none;
     }
@@ -710,6 +711,12 @@ header {
     padding-bottom: 80px;
 
     nav {
+      // position: fixed;
+      // z-index: 100;
+      // width: 100%;
+
+      ul {
+      }
       li {
         display: block;
         margin: 0;
@@ -749,7 +756,7 @@ header {
     }
   }
 
-  .about-section {
+  #chef-section {
     .chef {
       width: auto;
       max-width: 450px;
@@ -761,7 +768,7 @@ header {
     }
   }
 
-  .ingredients-section {
+  #ingredients-section {
     padding: 100px 0;
 
     .ingredients-container {
@@ -778,14 +785,14 @@ header {
     }
   }
 
-  .menu-section {
+  #menu-section {
     .menu-card {
       max-width: 450px;
       width: auto;
     }
   }
 
-  .review-section {
+  #review-section {
     background-position: center;
 
     .review-container {
@@ -801,7 +808,7 @@ header {
     }
   }
 
-  .reservation-section {
+  #reservation-section {
     padding: 100px 10px;
 
     .reservation-container {
