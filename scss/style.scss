@@ -786,6 +786,8 @@ header {
   }
 
   .review-section {
+    background-position: center;
+
     .review-container {
       width: 95%;
       padding: 50px 50px;
@@ -837,6 +839,10 @@ header {
         margin: 0 auto 90px;
         max-width: 355px;
         width: auto;
+      }
+
+      &:last-child {
+        margin: 0 auto;
       }
     }
 
