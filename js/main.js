@@ -3,8 +3,8 @@ $(document).ready(function() {
 // Scroll to sections
   $("nav > ul > li > a").on("click", function(e) {
     e.preventDefault();
-    section = $(this).attr("href");
-    speed = 700;
+    var section = $(this).attr("href");
+    var speed = 700;
 
     $("html, body").animate({
       scrollTop: $(section).offset().top
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 // Buttons click
   $(".btn-book").on("click", function() {
-    nameField = $("form input").first()
+    var nameField = $("form input").first();
     $("html, body").animate({
       scrollTop: $(nameField).offset().top - 40
     }, 700);
