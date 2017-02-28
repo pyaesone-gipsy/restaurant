@@ -608,6 +608,9 @@ header {
 
 @media all and (max-width: 1100px)  {
   header {
+    background: url("../img/main-bg-m.png") no-repeat right;
+    background-size: cover;
+
     .head-wrapper {
       text-align: center;
     }
@@ -667,6 +670,9 @@ header {
   }
 
   #ingredients-section {
+    background: url("../img/section-bg-m.png") center;
+    background-size: cover;
+
     .ingredients-container {
       float: none;
       margin: 0 auto;
@@ -697,6 +703,9 @@ header {
   }
 
   #review-section {
+    background: url("../img/reviews-bg-m.png");
+    background-size: cover;
+
     .review-container {
       max-width: 770px;
       width: 80%;
@@ -731,6 +740,8 @@ header {
 
 @media all and (max-width: 720px) {
   header {
+    background: url("../img/main-bg-s.png") no-repeat right;
+    background-size: cover;
     padding-bottom: 80px;
 
     nav {
@@ -829,6 +840,8 @@ header {
   }
 
   #ingredients-section {
+    background: url("../img/section-bg-s.png") left;
+    background-size: cover;
     padding: 100px 0;
 
     .ingredients-container {
@@ -853,7 +866,8 @@ header {
   }
 
   #review-section {
-    background-position: center;
+    background: url("../img/reviews-bg-s.png") center;
+    background-size: cover;
 
     .review-container {
       width: 95%;
