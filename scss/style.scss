@@ -520,6 +520,19 @@ header {
     }
   }
 
+  .developer-info {
+    font-size: 14px;
+    margin-top: 20px;
+
+    &:before {
+      display: none;
+    }
+
+    a {
+      color: #FFFFFF;
+    }
+  }
+
   span {
     font-weight: bold;
   }
